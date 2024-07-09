@@ -3,7 +3,6 @@
 FROM python:3.9-slim
 
 WORKDIR /py_fin_dash
-#COPY . /py_fin_dash
 
 RUN apt-get update && apt-get install -y \
     build-essential \
