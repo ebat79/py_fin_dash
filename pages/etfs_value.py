@@ -41,6 +41,7 @@ def fetch_data(symbol):
     info = etf.info
     options_info = fetch_options_data(symbol)
     return {
+        'Symbol': symbol,
         'Name': info.get('longName', 'N/A'),
         'Latest Price': f"${info.get('previousClose', np.nan)}",
         '52W High': f"${info.get('fiftyTwoWeekHigh', np.nan)}",
