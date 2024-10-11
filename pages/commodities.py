@@ -4,6 +4,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Define commodities, their measurement units, and names
+#
+# Il WTI è utilizzato principalmente per quotare petroli prodotti in Nord e Sud America; il Brent Blend è utilizzato per quelli prodotti in Europa (inclusa la Russia), Africa e Medio Oriente. Più del 60% delle transazioni sono fatte utilizzando come riferimento il Brent Blend.
+# Il petrolio Brent è quello originariamente scambiato sul London International Petroleum Exchange. Il prezzo petrolio Brent (parametrato sul barile) è il valore di riferimento per i mercati europei. Ma non solo, considerando che il suo valore determina quello del 60% del petrolio estratto nel mondo.
+#
 commodities_info = {
     "CL=F": {"unit": "barrels", "name": "Crude Oil (WTI)"},
     "BZ=F": {"unit": "barrels", "name": "Brent Crude"},
