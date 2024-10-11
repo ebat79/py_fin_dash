@@ -70,7 +70,7 @@ def app():
     refresh_button = st.button("Refresh Data")
 
     if refresh_button:
-        st.experimental_rerun()
+        st.rerun()
 
     constituents = fetch_sp500_tickers()
     tickers = constituents['Symbol'].tolist() # type: ignore
